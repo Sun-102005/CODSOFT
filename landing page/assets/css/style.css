@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background: transparent;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.wrapper {
+    background: url('../img/hero-bg-1.jpg') no-repeat center center / cover;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1; 
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right,#aa1685f2,hsla(301, 74%, 63%, 0.902),hsla(285, 83%, 69%, 0.851),hsla(328, 100%, 73%, 0.95) );
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Discover section*/
+.content {
+    display: flex;
+    padding: 80px 10%;
+    justify-content: center;
+    color: #FFF;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-info h1 {
+    font-size: 40px;
+}
+
+.hero-info p {
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 2;
+
+}
+
+.locale {
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+i.fa {
+    margin-right: 10px;
+}
+
+.social-links {
+    padding: 20px;
+    margin-top: 140px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-social {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.bg-facebook {
+    background-color: #4267B2;
+}
+
+.bg-youtube {
+    background-color: #FF0000;
+}
+
+.bg-instagram {
+    background-color: #C13584;
+}
+
+.cta-button {
+    background-color: #ff7b7b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+  border-radius: 50%;
+    object-fit: cover;
+}  
+
+/* Categories section*/
+.Categories{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+   
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    padding: 100px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f7b7b7;
+}
+
+tr:nth-child(even) {
+    background-color: peachpuff;
+}
+
+/* Baking stories section */
+.stories{
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+}  
+
+.card-box{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    box-sizing: border-box;   
+}  
+
+.card{
+    background-color: #ccc;
+    border: #000;
+    width: 400px;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+/*FAQs section*/
+.ques{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    padding-left: 100px;
+    background-color: wheat;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.faq{
+    margin-bottom: 20px;
+    border: 1px;
+    overflow: hidden;
+    background-color: #f7b7b7;
+    padding: 20px;
+    width: 900px;
+    
+}
+.faq summary{
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq summary:hover{
+    background-color: #ff7b7b;
+}
+.faq p{
+    padding: 20px;
+    color: black;
+}
+
+/*Feedback section*/
+.feedback-btn{
+    padding: 9px 25px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+  
+.feedback-btn:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.feedback{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.feedback .box{
+    height: 400px;
+    width: 500px;
+    background-color: #FFF;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 30px;
+
+}
+.feedback form{
+    display: flex;
+    flex-direction: column;
+}
+.feedback label{
+    margin: 10px;
+    font-weight: bold;
+    color: #000;
+}
+.feedback input[type="submit"]{
+    background-color: #C13584;
+    border: none;
+    height: 50px;
+}
+
+/* Tips & tricks section*/
+.tips{
+    background-color: hsl(310, 88%, 62%);
+    min-height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    
+}
+.tips p{
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+.list{
+    
+    justify-content: center;
+    font-size: medium;
+    max-width: 900px;
+}
+.list li{
+    margin-bottom: 20px;
+}
+
+footer{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+  
