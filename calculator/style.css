@@ -1,0 +1,53 @@
+header{
+    background-color: cyan;
+    text-align: center;
+    font-size: larger;
+}
+
+body{
+    background-color: rgb(52, 4, 171); 
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    background-color: antiquewhite ;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;  
+}
+
+#show{
+    width:495px ;
+    height:100px ;
+    border-radius: 10px;
+    font-size: xx-large;
+    text-align: right;
+    background-color: aqua;
+}
+.button{
+    display:grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 400px;
+    margin: auto;
+}
+button{
+    padding: 20px;
+    background-color: rgb(56, 155, 236);
+    color:black;
+    border: none;
+    border-radius: 10%;
+    gap:10px;
+    align-items: center;
+    justify-items: center;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+
